@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Velidation</title>
+    <!-- custom css file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="form">
+      <h2>FeedBack</h2>
+
+      <!-- Name -->
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="Your name here" />
+      <span id="nameError" class="error"></span>
+      <!-- Email -->
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Your email here"
+      />
+      <span id="emailError" class="error"></span>
+      <!-- Message -->
+      <label for="message">Message</label>
+      <textarea
+        name="message"
+        id="message"
+        rows="5"
+        placeholder="Enter Your Message.."
+      ></textarea>
+      <span id="messageError" class="error"></span>
+
+      <!-- Thanks Message -->
+      <p id="thanks" style="color: var(--success-color); display: none">
+        Thank You For Valuable FeedBack
+      </p>
+
+      <!-- Submit btn -->
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Custom javascript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
